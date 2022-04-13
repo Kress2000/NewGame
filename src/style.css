@@ -1,0 +1,49 @@
+#root{
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+    background: #3f668d;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+
+}
+*{
+    box-sizing: border-box;
+    font: inherit;
+}
+
+.board{
+    border: 3px solid #0d2135;
+    border-radius: 2vw;
+    box-shadow: 1rem 1rem 1rem 1rem hsla(251, 100%, 50%, .5);
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: .8em;
+    padding: .6rem;
+    height: 35vh;
+    width: 35vh;
+}
+.squareBtn{
+    font-size: 1rem;
+}
+.squareBtn:focus{
+    transform: scale(.9);
+    transform-origin: center;
+}
+
+
+.winner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 1s ease-in-out;
+
+
+}
+.winner-box:hover{
+    
+    background: hsl(210, 40%, 44%);
+}
